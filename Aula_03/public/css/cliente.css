@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, 	#87CEFA, 	#836FFF);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    min-height: 100vh;
+    margin: 20px;
+}
+
+nav {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around; /* Garante que os itens fiquem com espaços entre si */
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo semi-transparente */
+    padding: 10px 20px; /* Adiciona um pouco de espaço nas laterais */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    position: fixed; /* Fixa a nav no topo */
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Garante que a navbar fique sempre em cima do conteúdo */
+}
+
+.navbar .nav-links {
+    display: flex;
+    justify-content: center; /* Centraliza os links no meio da navbar */
+    gap: 20px; /* Espaço entre os links */
+    flex-grow: 1;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #836FFF; /* Cor do texto */
+    padding: 15px 20px; /* Espaçamento interno */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+.navbar a:hover {
+    background-color: rgba(183, 184, 192, 0.5); /* Cor ao passar o mouse */
+    border-radius: 5px; /* Cantos arredondados */
+}
+
+.box {
+    max-width: 600px; /* Define uma largura máxima */
+    width: 120%;
+    padding: 15px;
+    background-color: 	#FDF5E6;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destaque */
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+    margin-top: 60px;
+}
+
+fieldset {
+    border: 1px solid #836FFF;
+    border-radius: 15px;
+}
+
+legend {
+    border: 1px solid #836FFF;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    background-color: #836FFF;
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+}
+
+.inputUser {
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput {
+    top: -20px;
+    font-size: 12px;
+    color: #836FFF;
+}
+
+#submit {
+    background-image: linear-gradient(to right, 	#87CEFA, #836FFF);
+    width: 100%;
+    display: inline-block;
+    border: none;
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+}
+
+#submit:hover {
+    background-image: linear-gradient(to right, #836FFF,  #836FFF);
+}
+
+.foreach {
+    width: 85%; /* A tabela ocupará 85% da largura */
+    padding: 20px; /* Um pouco de espaço ao redor da tabela */
+    margin-top: 20px; /* Espaço entre a div e a tabela */
+    display: flex;
+    justify-content: center; /* Centraliza a tabela */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #836FFF;
+}
+
+td {
+    background-color: 	#FDF5E6;
+}
